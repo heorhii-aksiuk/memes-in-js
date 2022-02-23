@@ -1,6 +1,8 @@
 //#001: Job search ad
+import post from './post'
+import visitor from './visitor-profile'
 
-const candidateProfile = {
+const me = {
   fullName: 'Heorhii Aksiuk',
   currentPosition: 'Front-End Developer (React)',
   openToWork: true,
@@ -18,17 +20,12 @@ const candidateProfile = {
   ],
 }
 
-const { fullName, currentPosition, openToWork, experienceInYears, mainStack } =
-  candidateProfile
+const sendMessage = (candidateProfile, visitorProfile) => {
+  const { currentPosition, openToWork, experienceInYears, mainStack } =
+    candidateProfile
+  const { hiring, vacancy } = visitorProfile
 
-const sendMessage = ({
-  fullName,
-  currentPosition,
-  openToWork,
-  experienceInYears,
-  mainStack,
-}) => {
   // if(openToWork)
 }
 
-sendMessage(candidateProfile)
+sendMessage(myProfile)
